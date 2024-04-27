@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Complete/Fonts/WEB/fonts/Montserrat-Regular.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Complete/Fonts/WEB/fonts/Montserrat-Bold.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Complete/Fonts/WEB/fonts/Montserrat-Black.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Complete/Fonts/WEB/fonts/Montserrat-Light.woff2);
+    font-weight: 200;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-blue: #006690;
+    --color-yellow: #E9D985;
+    --color-dark: #222E50;
+}
+
+header{
+    display: grid;
+    background-color: var(--color-dark);
+    padding: 2vw 2vw;
+    row-gap: 17px;
+}
+
+header nav ul{
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 20px;
+    list-style-type: none;
+    color: var(--color-yellow);
+
+}
+
+header nav ul li a{
+    color: var(--color-yellow);
+    text-decoration: none;
+}
+
+header nav ul li:first-child img{
+    height: 20px;
+    width: 20px;
+}
+
+header nav ul li:last-child svg{
+    height: 10px;
+    width: 10px;
+    color: var(--color-yellow);
+}
+
+main section.worldAnimal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: linear-gradient(
+        to right,
+      rgb(0 0 0 / 50%),
+      rgb(0 0 0 / 20%)
+    ),
+    url(../images/nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.worldAnimal .left{
+    font-family: "Montserrat";
+    font-size: 60px;
+    padding: 2vw;
+    color: var(--color-yellow);
+}
+
+main section.worldAnimal .right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding: 2vw;
+    padding-right: 2vw;
+}
+
+main section.short{
+    display: grid;
+    background-color: var(--color-blue);
+    padding: 2vw 53px;
+    row-gap: 20px;
+}
+
+main section.short span{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main section.short p{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: var(--color-yellow);
+    text-align: center;
+}
+
+main section.houseSauvages{
+    display: grid;
+    padding: 2vw;
+    background-color: var(--color-dark);
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+main section.houseSauvages>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+
+main section.houseSauvages div>div.left{
+    display: flex;
+    flex-direction: column;
+}
+
+main section.houseSauvages div>div.left img{
+    width: 70%;
+    height: 90%;
+}
+
+main section.houseSauvages div>div.right{
+    position: relative;
+    left: 10vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main section.houseSauvages div>div.right img{
+    width: 70%;
+    height: 88%;
+}
+
+main section.houseSauvages div>div.right p{
+    color: var(--color-yellow);
+    font-family: "Montserrat";
+}
+
+main section.houseSauvages div>div.left p{
+    color: var(--color-yellow);
+    font-family: "Montserrat";
+
+}
+
+main section.houseSauvages h2{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: var(--color-yellow);
+}
+
+main section.houseSauvages div>div.right span{
+    font-family: "Montserrat";
+    left: 15vw;
+    font-size: 16px;
+    color: var(--color-yellow);
+}
+
+main section.houseSauvages .left>span{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+
