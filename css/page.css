@@ -38,8 +38,8 @@
 header{
     display: grid;
     background-color: var(--color-dark);
-    padding: 2vw;
-    column-gap: 17px;
+    padding: 2vw 2vw;
+    row-gap: 17px;
 }
 
 header nav ul{
@@ -51,15 +51,6 @@ header nav ul{
     column-gap: 20px;
     list-style-type: none;
     color: var(--color-yellow);
-
-}
-
-header .burger svg{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    color: var(--color-yellow);
-    display: none;
 }
 
 header nav ul li a{
@@ -76,6 +67,14 @@ header nav ul li:last-child svg{
     height: 10px;
     width: 10px;
     color: var(--color-yellow);
+}
+
+header .burger svg{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: var(--color-yellow);
+    display: none;
 }
 
 section.offset{
@@ -120,129 +119,136 @@ section.offset nav ul a{
     font-size: 20px;
 }
 
-main section.worldAnimal{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background-image: linear-gradient(
-        to right,
-      rgb(0 0 0 / 50%),
-      rgb(0 0 0 / 20%)
-    ),
-    url(../images/nature.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-main section.worldAnimal .left{
-    font-family: "Montserrat";
-    font-size: 60px;
-    padding: 2vw;
-    color: var(--color-yellow);
-}
-
-main section.worldAnimal .right{
+main{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 20px;
     row-gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding: 2vw;
-    padding-right: 2vw;
-}
-
-main section.short{
-    display: grid;
     background-color: var(--color-blue);
-    padding: 2vw 53px;
-    row-gap: 20px;
 }
 
-main section.short span{
+main h2{
+    padding-top: 20px;
     font-family: "Montserrat";
-    color: var(--color-yellow);
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
-}
-
-main section.short p{
-    font-family: "Montserrat";
-    font-size: 20px;
     color: var(--color-yellow);
-    text-align: center;
 }
 
-main section.houseSauvages{
-    display: grid;
-    padding: 2vw;
-    background-color: var(--color-dark);
-    row-gap: 20px;
-}
-
-main section.houseSauvages>div{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+main section.cat{
+    display: flex;
     column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.cat .left{
+    display: grid;
     row-gap: 20px;
 }
 
-main section.houseSauvages div>div.left{
+main section.cat .left p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--color-yellow);
+}
+
+main section.cat .left a{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+}
+
+main section.fish{
     display: flex;
-    flex-direction: column;
+    column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.fish .right{
+    display: grid;
     row-gap: 20px;
 }
 
-main section.houseSauvages div>div.left img{
-    width: 70%;
-    height: 90%;
-    margin: 0 auto;
+main section.fish .right p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+    font-weight: 200px;
 }
 
-main section.houseSauvages div>div.right{
+main section.fish .right a{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+    font-weight: 20px;
+}
+
+main section.dog{
     display: flex;
-    flex-direction: column;
+    padding: 2vw;
+    column-gap: 20px;
+}
+
+main section.dog .left p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--color-yellow);
+}
+
+main section.dog .left{
+    display: grid;
     row-gap: 20px;
-    margin: 0 auto;
 }
 
-main section.houseSauvages div>div.right img{
-    width: 70%;
-    height: 88%;
-    margin: 0 auto;
-}
-
-main section.houseSauvages div>div.right p{
-    color: var(--color-yellow);
+main section.dog .left a{
     font-family: "Montserrat";
-    text-align: center;
+    font-size: 18px;
+    color: var(--color-yellow);
+    font-weight: 20px;
 }
 
-main section.houseSauvages div>div.left p{
-    color: var(--color-yellow);
-    font-family: "Montserrat";
-    text-align: center;
+main section.cat .right{
+    display: grid;
 }
 
-main section.houseSauvages h2{
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 24px;
-    color: var(--color-yellow);
+
+main section.dog .right{
+    display: grid;
 }
 
-main section.houseSauvages div>div.right span{
-    font-family: "Montserrat";
-    text-align: center;
-    font-size: 16px;
-    color: var(--color-yellow);
+main section.parrot{
+    display: flex;
+    padding: 2vw;
+    column-gap: 20px;
+
 }
 
-main section.houseSauvages .left>span{
-    font-family: "Montserrat";
-    text-align: center;
-    color: var(--color-yellow);
+main section.parrot .right{
+    display: grid;
+    row-gap: 20px;
 }
+
+main section.parrot .right p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+    font-weight: 200px;
+}
+
+main section.parrot .right a{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+    font-weight: 20px;
+}
+
+hr{
+    border-color: var(--color-yellow);
+}
+
+
+
 
 footer{
     padding: 2vw;
@@ -325,23 +331,103 @@ footer .end p{
         display: block;
     }
 
-    main section.worldAnimal{
-        grid-template-columns: 1fr;
+    main h2{
+        width: 87%;
+        text-align: center;
     }
-    main section.worldAnimal .right{
-        grid-template-columns: repeat(2,1fr);
+
+    main section.cat{
+        flex-direction: column;
         row-gap: 20px;
+    }
+
+    main section.cat .left{
+        width: 87%;
+    }
+
+    main section.cat .left p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    main section.cat .left a{
+        text-align: center;
+    }
+
+    main section.cat .right{
+        width: 80%;
         margin: 0 auto;
     }
 
-    main section.worldAnimal .right img{
-        width: 90%;
-        height: 90%;
+    main section.fish{
+        flex-direction: column;
+        row-gap: 20px;
     }
 
-    main section.houseSauvages div{
-        grid-template-columns: 1fr;
+    main section.fish .left img{
+        width: 336px;
+        height: 228px;
+    }
+
+    main section.fish .left{
+        width: 79%;
+        margin: 0 auto;
+    }
+
+    main section.fish .right{
+        width: 85%;
+        text-align: center;
+    }
+
+    main section.fish .right p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    main section.dog{
+        flex-direction: column;
         row-gap: 20px;
+    }
+
+    main section.dog .left{
+        width: 85%;
+    }
+
+    main section.dog .left p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    main section.dog .left a{
+        text-align: center;
+    }
+
+    main section.dog .right{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    main section.parrot{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main section.parrot .left{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    main section.parrot .right{
+        width: 85%;
+    }
+
+    main section.parrot .right p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    main section.parrot .right a{
+        text-align: center;
     }
 
     footer{
@@ -353,5 +439,4 @@ footer .end p{
         margin: 0 auto;
         text-align: center;
     }
-
 }
