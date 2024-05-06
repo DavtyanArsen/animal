@@ -58,6 +58,13 @@ header nav ul li a{
     text-decoration: none;
 }
 
+header nav ul li:first-child a{
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    column-gap: 10px;
+}
+
 header nav ul li:first-child img{
     height: 20px;
     width: 20px;
@@ -147,16 +154,16 @@ main section.cat .left{
 
 main section.cat .left p{
     font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 16px;
     color: var(--color-yellow);
 }
 
 main section.cat .left a{
     font-family: "Montserrat";
-    font-size: 18px;
+    font-size: 16px;
     color: var(--color-yellow);
 }
+
 
 main section.fish{
     display: flex;
@@ -311,7 +318,7 @@ footer .end p{
     color: var(--color-yellow);
 }
 
-@media screen and (max-width: 490px){
+@media screen and (max-width: 390px){
     header nav ul li{
         display: none;
     }
@@ -332,7 +339,7 @@ footer .end p{
     }
 
     main h2{
-        width: 87%;
+
         text-align: center;
     }
 
@@ -341,22 +348,17 @@ footer .end p{
         row-gap: 20px;
     }
 
+
     main section.cat .left{
-        width: 87%;
-    }
-
-    main section.cat .left p{
         text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
 
-    main section.cat .left a{
-        text-align: center;
-    }
 
-    main section.cat .right{
-        width: 80%;
-        margin: 0 auto;
+    main section.cat .right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     main section.fish{
@@ -365,23 +367,15 @@ footer .end p{
     }
 
     main section.fish .left img{
-        width: 336px;
-        height: 228px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    main section.fish .left{
-        width: 79%;
-        margin: 0 auto;
-    }
 
     main section.fish .right{
-        width: 85%;
         text-align: center;
-    }
-
-    main section.fish .right p{
-        text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
 
     main section.dog{
@@ -389,22 +383,20 @@ footer .end p{
         row-gap: 20px;
     }
 
-    main section.dog .left{
-        width: 85%;
-    }
-
     main section.dog .left p{
         text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
 
     main section.dog .left a{
         text-align: center;
     }
 
-    main section.dog .right{
-        width: 85%;
+    main section.dog .right img{
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
+        object-fit: cover;
     }
 
     main section.parrot{
@@ -412,18 +404,17 @@ footer .end p{
         row-gap: 20px;
     }
 
-    main section.parrot .left{
-        width: 85%;
+    main section.parrot .left img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         margin: 0 auto;
     }
 
-    main section.parrot .right{
-        width: 85%;
-    }
 
     main section.parrot .right p{
         text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
 
     main section.parrot .right a{
