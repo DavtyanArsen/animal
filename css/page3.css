@@ -128,3 +128,287 @@ section.offset nav ul a{
     font-size: 20px;
 }
 
+hr{
+    border-color: var(--color-yellow);
+}
+
+main{
+    display: grid;
+    row-gap: 20px;
+    background-color: var(--color-dark);
+}
+
+main h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: var(--color-yellow);
+}
+
+main section.tiger{
+    display: flex;
+    column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.tiger .left{
+    display: grid;
+    font-family: "Montserrat";
+    row-gap: 20px;
+    font-size: 18px;
+    color: var(--color-yellow);
+}
+
+main section.tiger .left a{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+main section.lion{
+    display: flex;
+    column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.lion .right{
+    display: grid;
+    font-family: "Montserrat";
+    font-size: 18px;
+    row-gap: 20px;
+    color: var(--color-yellow);
+}
+
+main section.lion .right a{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+}
+
+main section.snake{
+    display: flex;
+    column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.snake .left{
+    display: grid;
+    font-family: "Montserrat";
+    row-gap: 20px;
+    font-size: 18px;
+    color: var(--color-yellow);
+}
+
+main section.snake a{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+main section.wolf{
+    display: flex;
+    column-gap: 20px;
+    padding: 2vw;
+}
+
+main section.wolf .right{
+    display: grid;
+    font-family: "Montserrat";
+    font-size: 18px;
+    row-gap: 20px;
+    color: var(--color-yellow);
+}
+
+main section.wolf .right a{
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: var(--color-yellow);
+}
+
+footer{
+    padding: 2vw;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    column-gap: 50px;
+    background-color: var(--color-blue);
+}
+
+footer .left{
+    display: grid;
+    row-gap: 20px;
+}
+
+footer ul{
+    display: flex;
+    column-gap: 40px;
+    list-style-type: none;
+}
+
+footer .left>ul li a svg{
+    color: var(--color-yellow);
+    width: 24px;
+    height: 24px;
+}
+
+footer .left span{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+footer .center{
+    display: flex;
+    margin: 0 auto;
+}
+
+footer .center svg{
+    color: var(--color-yellow);
+    height: 24px;
+    width: 24px;
+}
+
+footer .center span{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+footer .end{
+    display: grid;
+    row-gap: 32px;
+}
+
+footer .end span{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+footer .end p{
+    font-family: "Montserrat";
+    color: var(--color-yellow);
+}
+
+@media screen and (max-width: 490px){
+    header nav ul li{
+        display: none;
+    }
+    header nav ul li:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(2,1fr)
+    }
+    header .burger{
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
+        column-gap: 20px;
+    }
+
+    header .burger svg{
+        display: block;
+    }
+
+    main h2{
+        text-align: center;
+    }
+
+    main section.tiger{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main section.tiger .left p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    main section.tiger .left a{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main section.tiger .right img{
+        display: grid;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    main section.lion{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main section.lion .left img{
+        display: grid;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    main section.lion .right p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    main section.lion .right a{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    main section.snake{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main section.snake .left p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    main section.snake .left a{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main section.snake .right img{
+        display: grid;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    main section.wolf{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    main section.wolf .left img{
+        display: grid;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    main section.wolf .right p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    main section.wolf .right a{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    footer{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    footer div{
+        margin: 0 auto;
+        text-align: center;
+    }
+}

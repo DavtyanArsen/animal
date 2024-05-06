@@ -38,7 +38,7 @@
 header{
     display: grid;
     background-color: var(--color-dark);
-    padding: 2vw 2vw;
+    padding: 2vw;
     row-gap: 17px;
 }
 
@@ -254,9 +254,6 @@ hr{
     border-color: var(--color-yellow);
 }
 
-
-
-
 footer{
     padding: 2vw;
     display: flex;
@@ -318,7 +315,7 @@ footer .end p{
     color: var(--color-yellow);
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 490px){
     header nav ul li{
         display: none;
     }
@@ -339,7 +336,6 @@ footer .end p{
     }
 
     main h2{
-
         text-align: center;
     }
 
@@ -356,9 +352,11 @@ footer .end p{
 
 
     main section.cat .right img{
-        width: 100%;
+        display: grid;
+        width: 50%;
         height: 100%;
         object-fit: cover;
+        margin: 0 auto;
     }
 
     main section.fish{
@@ -367,9 +365,11 @@ footer .end p{
     }
 
     main section.fish .left img{
-        width: 100%;
+        display: grid;
+        width: 50%;
         height: 100%;
         object-fit: cover;
+        margin: 0 auto;
     }
 
 
@@ -393,7 +393,8 @@ footer .end p{
     }
 
     main section.dog .right img{
-        width: 100%;
+        display: grid;
+        width: 50%;
         height: 100%;
         margin: 0 auto;
         object-fit: cover;
@@ -405,7 +406,8 @@ footer .end p{
     }
 
     main section.parrot .left img{
-        width: 100%;
+        display: grid;
+        width: 50%;
         height: 100%;
         object-fit: cover;
         margin: 0 auto;

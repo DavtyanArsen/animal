@@ -35,6 +35,10 @@
     --color-dark: #222E50;
 }
 
+hr{
+    border-color: var(--color-yellow);
+}
+
 header{
     display: grid;
     background-color: var(--color-dark);
